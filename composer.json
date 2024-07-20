@@ -1,0 +1,15 @@
+{
+    "name": "soysudhanshu/katana-docs",
+    "description": "Documentation for Katana Template Engine",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+    },
+    "authors": [
+        {
+            "name": "Sudhanshu R."
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}
