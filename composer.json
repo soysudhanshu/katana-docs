@@ -11,5 +11,10 @@
         }
     ],
     "minimum-stability": "stable",
-    "require": {}
+    "require": {
+        "soysudhanshu/katana": "^0.1.0"
+    },
+    "require-dev": {
+        "symfony/var-dumper": "^8.1"
+    }
 }
