@@ -3,7 +3,7 @@
 use Blade\Blade;
 
 if (!function_exists('view')) {
-    function view(string $view, array $data = []): string
+    function view(string $view, array $data = []): Stringable
     {
         static $blade = null;
 
