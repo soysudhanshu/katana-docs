@@ -22,7 +22,7 @@ export default {
             configureServer(server) {
                 const { ws, watcher } = server;
                 watcher.on('change', (file) => {
-                    if (file.endsWith('.php')) {
+                    if (file.endsWith('.php') || file.endsWith('.md')) {
                         ws.send({ type: 'full-reload' });
                     }
                 })
