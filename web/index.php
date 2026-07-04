@@ -1,6 +1,7 @@
 <?php
 
-use Blade\Blade;
+use App\Document;
+use App\Route;
 
 require_once __DIR__ . '/../vendor/autoload.php';
 
@@ -13,9 +14,13 @@ if (!is_dir(CACHE_DIR) && !mkdir(CACHE_DIR)) {
     die("Cannot create cache directory");
 }
 
-$blade = new Blade(VIEW_DIR, CACHE_DIR);
+Route::get('/', fn() => view('index'));
 
-$blade->setEnvironment(fn () => 'development');
+$response = Route::dispatch();
 
-
-echo $blade->render('index');
+if ($response === null) {
+    http_response_code(404);
+    echo '404';
+} else {
+    echo $response;
+}
