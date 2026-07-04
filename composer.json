@@ -15,7 +15,7 @@
     ],
     "minimum-stability": "stable",
     "require": {
-        "soysudhanshu/katana": "^0.1.0",
+        "soysudhanshu/katana": "dev-master",
         "league/commonmark": "^2.8"
     },
     "require-dev": {

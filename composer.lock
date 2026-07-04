@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "fba479cbe6d8550e5dd203ff979a540f",
+    "content-hash": "0e5c5957d7f69a255e111c7f6030ceb2",
     "packages": [
         {
             "name": "dflydev/dot-access-data",
@@ -480,23 +480,27 @@
         },
         {
             "name": "soysudhanshu/katana",
-            "version": "0.1.0",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/soysudhanshu/katana.git",
-                "reference": "941ee0505d2538e4d76a236a859df4d0c1e12c29"
+                "reference": "4ea077086f64192f52c606af2fb531440c8affe3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/soysudhanshu/katana/zipball/941ee0505d2538e4d76a236a859df4d0c1e12c29",
-                "reference": "941ee0505d2538e4d76a236a859df4d0c1e12c29",
+                "url": "https://api.github.com/repos/soysudhanshu/katana/zipball/4ea077086f64192f52c606af2fb531440c8affe3",
+                "reference": "4ea077086f64192f52c606af2fb531440c8affe3",
                 "shasum": ""
+            },
+            "require": {
+                "php": ">=8.0"
             },
             "require-dev": {
                 "phpstan/phpstan": "^2.2",
-                "phpunit/phpunit": "^11.2",
-                "symfony/var-dumper": "^7.1"
+                "phpunit/phpunit": "^9",
+                "symfony/var-dumper": "^5"
             },
+            "default-branch": true,
             "type": "library",
             "autoload": {
                 "files": [
@@ -514,9 +518,9 @@
             "description": "Stadalone version of laravel Blade",
             "support": {
                 "issues": "https://github.com/soysudhanshu/katana/issues",
-                "source": "https://github.com/soysudhanshu/katana/tree/0.1.0"
+                "source": "https://github.com/soysudhanshu/katana/tree/master"
             },
-            "time": "2026-06-24T13:39:16+00:00"
+            "time": "2026-07-04T05:00:23+00:00"
         },
         {
             "name": "symfony/deprecation-contracts",
@@ -850,7 +854,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {},
+    "stability-flags": {
+        "soysudhanshu/katana": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {},
