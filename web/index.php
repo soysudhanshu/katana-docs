@@ -4,8 +4,10 @@ use Blade\Blade;
 
 require_once __DIR__ . '/../vendor/autoload.php';
 
-define('VIEW_DIR', realpath(__DIR__ . '/../resources/views/'));
-define('CACHE_DIR', realpath(__DIR__ . '/../.cache/'));
+define('ROOT_DIR', realpath(__DIR__ . '/../'));
+define('DOC_DIR', ROOT_DIR . '/docs');
+define('VIEW_DIR', ROOT_DIR . '/resources/views/');
+define('CACHE_DIR', ROOT_DIR . '/.cache/');
 
 if (!is_dir(CACHE_DIR) && !mkdir(CACHE_DIR)) {
     die("Cannot create cache directory");
